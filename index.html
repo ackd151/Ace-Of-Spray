@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ace of Spray</title>
+    <title>
+      Ace of Spray | Pessure Washing Residential Commercial Round Rock Texas
+    </title>
 
     <link rel="stylesheet" href="css/styles.css" />
 
@@ -15,15 +17,17 @@
       href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
+
+    <script src="javascript/copyEmail.js"></script>
   </head>
   <body>
     <div class="ribbon">
       <div class="company">
         <!-- <img src="" alt="Ace of Spray Company Logo"> -->
-        <h2 class="company-heading">Ace of Spray</h2>
+        <h1 class="company-heading">Ace of Spray</h1>
       </div>
       <div class="contact">
-        <div class="method phone">
+        <a href="tel:512-555-5555" class="contact-link">
           <svg
             aria-hidden="true"
             focusable="false"
@@ -39,9 +43,9 @@
               d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"
             ></path>
           </svg>
-          <p class="number">512-555-5555</p>
-        </div>
-        <div class="method email">
+          <p>512-555-5555</p>
+        </a>
+        <a href="mailto:Scotty@YoMomma.net" class="contact-link">
           <svg
             aria-hidden="true"
             focusable="false"
@@ -57,129 +61,108 @@
               d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
             ></path>
           </svg>
-          <p class="email-address">Scotty@YoMomma.net</p>
+          <p id="email-address">Scotty@YoMomma.net</p>
+        </a>
+        <div class="copy-email" onClick="copyEmail()">
+          <p class="tooltip">Copy email to clipboard.</p>
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="copy"
+            class="copy-email-svg"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              fill="currentColor"
+              d="M320 448v40c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V120c0-13.255 10.745-24 24-24h72v296c0 30.879 25.121 56 56 56h168zm0-344V0H152c-13.255 0-24 10.745-24 24v368c0 13.255 10.745 24 24 24h272c13.255 0 24-10.745 24-24V128H344c-13.2 0-24-10.8-24-24zm120.971-31.029L375.029 7.029A24 24 0 0 0 358.059 0H352v96h96v-6.059a24 24 0 0 0-7.029-16.97z"
+            ></path>
+          </svg>
         </div>
       </div>
     </div>
     <nav class="nav" id="nav-section">
-      <a class="nav-link" href="./index.html">home</a>
-      <a class="nav-link" href="#about">about</a>
-      <a class="nav-link" href="#services">services</a>
-      <a class="nav-link" href="#quote">get quote</a>
+      <div class="nav-logo" id="nav-logo">
+        <h2 class="company-heading">Ace of Spray</h2>
+      </div>
+      <div>
+        <a class="nav-link" href="#">home</a>
+        <a class="nav-link" href="#about">about</a>
+        <a class="nav-link" href="#services">services</a>
+        <a class="nav-link" href="#quote">get quote</a>
+      </div>
     </nav>
-    <div class="page">
-      <main class="main">
-        <section class="about" id="about">
-          <div class="about-content">
-            <h2 class="about-heading">
-              Residential and Commercial Pressure Washing Services
-            </h2>
-            <div class="about-text">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
-              expedita nostrum nam magnam, fugiat consectetur deserunt ducimus
-              ut exercitationem. Odio debitis harum sunt. Eos, vitae porro.
-              Cupiditate labore dolorem reprehenderit? <br />
-              <br />
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
-              expedita nostrum nam magnam, fugiat consectetur deserunt ducimus
-              ut exercitationem. Odio debitis harum sunt. Eos, vitae porro.
-              Cupiditate labore dolorem reprehenderit?
-            </div>
-            <div class="about-cta">
-              <div class="cta-btn" id="gallery-btn">view gallery</div>
-              <div class="cta-btn" id="quote-btn">get a quote</div>
-            </div>
+    <main class="main">
+      <section class="about" id="about">
+        <div class="about-content">
+          <h2 class="about-heading">
+            Residential and Commercial Pressure Washing Services
+          </h2>
+          <div class="about-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
+            expedita nostrum nam magnam, fugiat consectetur deserunt ducimus ut
+            exercitationem. Odio debitis harum sunt. Eos, vitae porro.
+            Cupiditate labore dolorem reprehenderit? <br />
+            <br />
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
+            expedita nostrum nam magnam, fugiat consectetur deserunt ducimus ut
+            exercitationem. Odio debitis harum sunt. Eos, vitae porro.
+            Cupiditate labore dolorem reprehenderit?
           </div>
-        </section>
-      </main>
-      <section class="services" id="services">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus
-        praesentium quis dicta fugit earum nam saepe quia aliquam inventore quo.
-        In voluptas officiis quaerat cumque est quae officia distinctio hic! A
-        pariatur quibusdam culpa dolorem deserunt recusandae, sequi provident
-        magni illum consequatur consequuntur aspernatur id voluptatibus sit
-        perspiciatis placeat velit, aliquid dolores? Nam tempora id magni ipsum
-        assumenda officiis deleniti! A tempora amet quis qui, sunt molestias
-        pariatur porro quam voluptatum recusandae, velit aspernatur, cumque odio
-        voluptate. Sequi illo cumque ipsa possimus, minima quidem mollitia
-        deserunt obcaecati fuga animi reprehenderit? Harum quis est sunt
-        eligendi incidunt tenetur amet a, sint tempora, sed ullam error rem
-        omnis necessitatibus itaque repudiandae eveniet o mollitia assumenda
-        autem ullam odio provi Soluta deleniti aliquid illo corporis commodi
-        molestiae molestias debitis quia nisi eveniet amet quam mollitia unde
-        totam incidunt velit facilis earum voluptatem voluptas nesciunt, saepe
-        tempora delectus? Porro, dolorum praesentium? Repellat sit, enim
-        accusantium cupiditate dolore repudiandae nostrum explicabo at adipisci
-        facere nulla sint in animi aperiam ipsum nihil. Cum explicabo ut
-        repellat ad obcaecati ratione illum, fuga vel voluptatum. Dolores
-        facilis corrupti eum porro tempore, exercitationem error eius molestias
-        ex doloremque ea temporibus aliquam maxime quia ratione perspiciatis
-        facere impedit delectus suscipit, mollitia totam dicta quo blanditiis
-        animi! Quas.
+          <div class="about-cta">
+            <div class="cta-btn" id="gallery-btn">view gallery</div>
+            <div class="cta-btn" id="quote-btn">get a quote</div>
+          </div>
+        </div>
       </section>
+    </main>
+    <section class="services" id="services">
+      <div class="service"></div>
+    </section>
 
-      <section class="business">
-        <div class="business-info">
-          <h2 class="company-heading">Ace of Spray</h2>
-          <div class="phone">
-            <h4>Phone:</h4>
-            <p class="business-contact">512-555-5555</p>
-          </div>
-          <div class="email">
-            <h4>Email:</h4>
-            <p class="business-contact">Scotty@YoMomma.net</p>
-          </div>
-          <div class="hours">
-            <h4>Service Hours:</h4>
-            <p>Monday through Friday, 7am to 7pm</p>
-          </div>
+    <section class="business">
+      <div class="business-info">
+        <h2 class="company-heading">Ace of Spray</h2>
+        <div class="phone">
+          <h4>Phone:</h4>
+          <p class="business-contact">512-555-5555</p>
         </div>
-        <div class="service-area">
-          <h3>Location</h3>
-          <p>Round Rock, TX</p>
-          <img
-            class="service-area-img"
-            src="images/Round-Rock.jpg"
-            alt="service area Round Rock TX"
-          />
+        <div class="email">
+          <h4>Email:</h4>
+          <p class="business-contact">Scotty@YoMomma.net</p>
         </div>
-      </section>
-    </div>
+        <div class="service-hours">
+          <h4>Service Hours:</h4>
+          <p>Monday through Friday, 7am to 7pm</p>
+        </div>
+        <div class="service-areas">
+          <h4>Service Areas:</h4>
+          <ul>
+            <li><p>Round Rock</p></li>
+            <li><p>Brushy Creek</p></li>
+            <li><p>Cedar Park</p></li>
+            <li><p>Windemere</p></li>
+            <li><p>Pflugerville</p></li>
+            <li><p>Wells Branch</p></li>
+            <li><p>Austin</p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="service-location">
+        <h3>Location</h3>
+        <p>Round Rock, TX</p>
+        <img
+          class="service-area-img"
+          src="images/Round-Rock.jpg"
+          alt="service area Round Rock TX"
+        />
+      </div>
+    </section>
 
     <footer class="footer">
       <div class="footer-copyright">Copyright &copy; 2021. Ace of Spray</div>
-      <div class="footer-contact">
-        <svg
-          aria-hidden="true"
-          focusable="false"
-          data-prefix="fas"
-          data-icon="phone-alt"
-          class="svg-ribbon"
-          role="img"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 512 512"
-        >
-          <path
-            fill="currentColor"
-            d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"
-          ></path>
-        </svg>
-        <svg
-          aria-hidden="true"
-          focusable="false"
-          data-prefix="fas"
-          data-icon="envelope"
-          class="svg-ribbon"
-          role="img"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 512 512"
-        >
-          <path
-            fill="currentColor"
-            d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
-          ></path>
-        </svg>
-      </div>
     </footer>
     <script src="javascript/stickyNav.js"></script>
   </body>

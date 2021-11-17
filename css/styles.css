@@ -6,6 +6,7 @@
   --color-usmc-blue: rgb(0, 68, 129);
   --color-usmc-yellow: rgb(255, 213, 0);
   --color-usmc-gray: rgb(117, 117, 117);
+  --color-black: rgb(0, 0, 0);
   /* colors-muted */
   --color-white-muted: rgba(255, 255, 255, 0.75);
   --color-white-muted-strong: rgba(255, 255, 255, 0.25);
@@ -14,24 +15,41 @@
   --color-usmc-yellow-muted: rgba(255, 213, 0, 0.75);
 }
 
+/* Resets */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-weight: 400;
+}
+a,
+ul,
+li {
+  list-style: none;
+  text-decoration: none;
+  color: var(--color-white);
 }
 
 body {
   font-family: "Big Shoulders Text", cursive;
   font-size: 62.5%;
+  font-weight: 400;
   background-color: var(--color-bg);
 }
 
 h2 {
   font-size: 2.5rem;
+  font-weight: 700;
 }
 
 h3 {
   font-size: 2rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.8rem;
+  font-weight: 700;
 }
 
 /* Top Ribbon */
@@ -56,17 +74,47 @@ h3 {
 }
 
 .contact {
+  position: relative;
   display: flex;
   font-size: 1.2rem;
 }
 
-.method {
+.contact-link {
   display: flex;
 }
 
-.method:hover {
+.contact-link:hover {
   cursor: pointer;
   color: var(--color-white-muted);
+}
+
+.copy-email-svg {
+  height: 1rem;
+  width: 1rem;
+  margin-left: 0.5rem;
+}
+
+.tooltip {
+  visibility: hidden;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: 0.25rem;
+  text-decoration: underline;
+  width: fit-content;
+  font-size: 0.8rem;
+  bottom: -1.5rem;
+  right: 0;
+
+  position: absolute;
+  z-index: 5;
+}
+
+.copy-email-svg:hover {
+  color: var(--color-white-muted);
+}
+
+.copy-email:hover .tooltip {
+  visibility: visible;
 }
 /* END - Top Ribbon */
 
@@ -74,7 +122,7 @@ h3 {
 .nav {
   width: 100vw;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   background-color: var(--color-white);
   padding-right: 1rem;
   font-size: 0; /* eliminate space between inline-block elements in div */
@@ -82,7 +130,24 @@ h3 {
   border-bottom: 2px solid var(--color-usmc-gold);
 }
 
+.nav-logo {
+  margin-left: 1rem;
+  transition: all 0.3s;
+  color: var(--color-usmc-blue);
+  opacity: 0;
+}
+.nav-logo.visible {
+  opacity: 1;
+  transition: all 2s;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .nav-link {
+  display: inline-block;
   color: var(--color-usmc-blue);
   font-size: 1.2rem;
   font-weight: 700;
@@ -177,6 +242,14 @@ h3 {
   background-color: rgba(0, 0, 0, 0.85);
 }
 
+.business .company-heading {
+  font-size: 2.8rem;
+}
+
+.business > div {
+  flex: 1;
+}
+
 .business-info > *:not(:first-child) {
   margin: 1rem 0 0 0.5rem;
 }
@@ -186,24 +259,28 @@ h3 {
 }
 
 .service-area-img {
-  /* width: 50%; */
+  width: 90%;
   object-fit: cover;
 }
 
-.service-area p {
+.service-location p {
   font-size: 1.4rem;
   margin: 0.25rem 0 0.5rem 0;
+}
+
+.business p {
+  font-size: 1.4rem;
+  margin-left: 1rem;
 }
 /* END - Business */
 
 /* Footer */
 .footer {
-  /* padding: 0.5rem 1rem 2rem 1rem; */
   padding: 0.5rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   color: var(--color-white);
   background-color: rgba(0, 0, 0, 0.9);
 }
