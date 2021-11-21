@@ -10,6 +10,7 @@
   /* colors-muted */
   --color-white-muted: rgba(255, 255, 255, 0.75);
   --color-white-muted-strong: rgba(255, 255, 255, 0.25);
+  --color-usmc-red-muted: rgb(204, 16, 31, 0.5);
   --color-usmc-gold-muted: rgb(167, 124, 41, 0.65);
   --color-usmc-blue-muted: rgba(0, 68, 129, 0.75);
   --color-usmc-yellow-muted: rgba(255, 213, 0, 0.75);
@@ -28,6 +29,9 @@ ul,
 li {
   list-style: none;
   text-decoration: none;
+}
+
+a {
   color: var(--color-white);
 }
 
@@ -169,6 +173,7 @@ h4 {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1rem;
+  transition: all 0.3s ease-out;
 }
 .nav-link:hover,
 .nav-link:active {
@@ -195,14 +200,8 @@ h4 {
 /* About */
 .about {
   padding: 5rem;
-  /* width: 100vw; */
   min-height: 85vh;
   background-image: url(../images/ace-of-spray.jpg);
-  /* background: linear-gradient(
-      var(--color-white-muted-strong),
-      var(--color-white-muted-strong)
-    ),
-    url(../images/pw.jpg); */
   background-size: cover;
   background-repeat: no-repeat;
   font-size: 1.6rem;
@@ -239,6 +238,20 @@ h4 {
   color: var(--color-usmc-gold);
   background: var(--color-white);
   text-transform: uppercase;
+  border: 2px solid var(--color-white);
+  background-image: linear-gradient(
+    120deg,
+    transparent 0%,
+    transparent 50%,
+    var(--color-usmc-gold) 50%
+  );
+  background-size: 250%;
+  transition: all 0.4s;
+}
+
+.cta-btn:hover {
+  color: var(--color-white);
+  background-position: 100%;
 }
 /* END - About */
 
@@ -247,10 +260,9 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 5rem 1rem;
   border-top: 2px solid var(--color-usmc-gold);
   border-bottom: 2px solid var(--color-usmc-gold);
-  padding: 2rem 0;
+  padding: 2rem 1rem;
 }
 
 .services-list {
@@ -289,17 +301,31 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2rem 0;
+  padding: 2rem;
+  color: var(--color-black);
+  font-size: 1.6rem;
+
+  /* background-color: var(--color-usmc-gold-muted); */
+  border-bottom: 2px solid var(--color-usmc-gold);
+}
+.gallery > * {
+  flex: 1;
+}
+
+#gallery {
+  margin-top: -100px;
+  padding-bottom: 100px;
+  display: block;
 }
 
 .gallery-list {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .gallery-image {
   height: 50vh;
-  /* width: 80vw; */
   display: none;
 }
 .gallery-image img {
@@ -311,17 +337,37 @@ h4 {
 .gallery-image.active {
   display: block;
 }
+
+.gallery-text {
+  padding: 1rem;
+}
 /* END - Gallery */
 
 /* Reviews */
+.reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  color: var(--color-black);
+  font-size: 1.6rem;
+}
+.reviews > * {
+  flex: 1;
+}
+
+.reviews-text {
+  text-align: center;
+}
+
 .review-list {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .review-image {
   height: 50vh;
-  /* width: 80vw; */
   display: none;
 }
 
@@ -332,7 +378,7 @@ h4 {
   margin: auto;
 }
 .review-image.active {
-  display: block;
+  display: flex;
 }
 /* END - Reviews */
 
@@ -362,6 +408,9 @@ h4 {
 .business-contact {
   margin-left: 1rem;
   color: var(--color-usmc-gold);
+}
+.business-contact:hover {
+  color: var(--color-usmc-gold-muted);
 }
 
 .service-area-img {

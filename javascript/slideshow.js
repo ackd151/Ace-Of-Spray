@@ -1,23 +1,40 @@
+// Ensure nodes exist before init
 window.onload = function () {
-  startSlideshow();
+  startSlideshows();
 };
 
-const startSlideshow = () => {
-  const images = document.querySelectorAll(".gallery-image");
+const startSlideshows = () => {
+  // Get image refs
+  const galleryImages = document.querySelectorAll(".gallery-image");
+  const reviewImages = document.querySelectorAll(".review-image");
 
-  let index = 0,
-    interval = 5000;
-  images[index].classList.add("active");
+  // Init vars
+  let galleryIndex = 0,
+    reviewIndex = 0,
+    galleryInterval = 5000,
+    reviewInterval = 10000;
 
-  setInterval(() => {
-    images[index].classList.remove("active");
+  // Set active class on first images
+  galleryImages[galleryIndex].classList.add("active");
+  reviewImages[reviewIndex].classList.add("active");
 
-    index++;
+  // Start gallery slideshow
+  startWithInterval(galleryImages, galleryIndex, galleryInterval);
+  // Start review slideshow
+  startWithInterval(reviewImages, reviewIndex, reviewInterval);
 
-    if (index === images.length) {
-      index = 0;
-    }
+  // Slideshow function
+  function startWithInterval(images, index, interval) {
+    setInterval(() => {
+      images[index].classList.remove("active");
 
-    images[index].classList.add("active");
-  }, interval);
+      index++;
+
+      if (index === images.length) {
+        index = 0;
+      }
+
+      images[index].classList.add("active");
+    }, interval);
+  }
 };
