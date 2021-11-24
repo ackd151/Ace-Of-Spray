@@ -1,0 +1,91 @@
+:root {
+  /* colors */
+  --color-white: rgb(255, 255, 255);
+  --color-usmc-red: rgb(204, 16, 31);
+  --color-usmc-gold: rgb(167, 124, 41);
+  --color-usmc-blue: rgb(0, 68, 129);
+  --color-usmc-yellow: rgb(255, 213, 0);
+  --color-usmc-gray: rgb(117, 117, 117);
+  --color-black: rgb(0, 0, 0);
+  /* colors-muted */
+  --color-white-muted: rgba(255, 255, 255, 0.75);
+  --color-white-muted-strong: rgba(255, 255, 255, 0.25);
+  --color-usmc-red-muted: rgb(204, 16, 31, 0.5);
+  --color-usmc-gold-muted: rgb(167, 124, 41, 0.65);
+  --color-usmc-blue-muted: rgba(0, 68, 129, 0.75);
+  --color-usmc-yellow-muted: rgba(255, 213, 0, 0.75);
+  --color-usmc-gray-muted: rgb(117, 117, 117, 0.5);
+  --color-black-muted: rgba(0, 0, 0, 0.5);
+}
+
+/* || Resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+a,
+ul,
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  color: var(--color-white);
+}
+
+/* || General */
+html {
+  font-size: 100%;
+}
+
+body {
+  /* width: 100vw; */
+  font-family: "Big Shoulders Text", cursive;
+  font-weight: 400;
+  background-color: var(--color-bg);
+  overflow-x: hidden;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+section {
+  padding: 5rem;
+}
+
+/* Site-wide */
+.section-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* || Media queries */
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 90%;
+  }
+  section {
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  html {
+    font-size: 80%;
+  }
+}

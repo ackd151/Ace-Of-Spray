@@ -1,0 +1,58 @@
+/* || Nav */
+.nav {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-white);
+  padding-right: 1rem;
+  font-size: 0; /* eliminate space between inline-block elements in div */
+  border-top: 2px solid var(--color-usmc-gold);
+  border-bottom: 2px solid var(--color-usmc-gold);
+}
+
+.nav-logo {
+  margin-left: 1rem;
+  transition: all 0.3s;
+  color: var(--color-usmc-blue);
+  opacity: 0;
+}
+.nav-logo.visible {
+  opacity: 1;
+  transition: all 2s;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-link {
+  display: inline-block;
+  color: var(--color-usmc-blue);
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem;
+  transition: all 0.3s ease-out;
+}
+.nav-link:hover,
+.nav-link:active {
+  color: var(--color-usmc-yellow);
+  background-color: var(--color-usmc-blue-muted);
+}
+
+.nav-link:last-of-type {
+  color: var(--color-usmc-yellow);
+  background-color: var(--color-usmc-blue);
+}
+.nav-link:last-of-type:hover,
+.nav-link:last-of-type:active {
+  color: var(--color-usmc-blue);
+  background-color: var(--color-usmc-yellow-muted);
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}

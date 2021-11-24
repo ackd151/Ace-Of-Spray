@@ -1,0 +1,18 @@
+/* || Footer */
+.footer {
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--color-white);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.attributions {
+  font-size: 0.8rem;
+}
+.attributions a {
+  color: var(--color-usmc-yellow);
+}
+.attributions a:hover {
+  color: var(--color-usmc-yellow-muted);
+}
