@@ -74,6 +74,17 @@ section {
   margin-bottom: 2rem;
 }
 
+.page-link {
+  display: flex;
+  align-items: center;
+}
+.page-link *:first-child {
+  margin-right: 0.5rem;
+}
+.link-arrow {
+  width: 1rem;
+}
+
 /* || Media queries */
 @media only screen and (max-width: 1000px) {
   html {

@@ -111,6 +111,22 @@
   align-items: center;
 }
 
+.gallery-link {
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-top: 1.5rem;
+  border: 1px solid var(--color-usmc-gold);
+  color: var(--color-usmc-gold);
+  background-color: var(--color-white-muted);
+}
+
+.gallery-link:hover {
+  color: var(--color-white);
+  border-color: var(--color-white);
+  background-color: var(--color-usmc-gold-muted);
+}
+
 /* || Slides */
 .slide {
   height: 50vh;
